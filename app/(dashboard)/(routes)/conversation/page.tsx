@@ -108,7 +108,7 @@ const ConversationPage = () => {
             </form>
           </Form>
         </div>
-        <div className="space-y-0 mt-4">
+        <div className="space-y-4 mt-4">
           {isLoading && (
             <div className="p-8 rounded-lg w-full flex items-center justify-center bg-muted">
               <Loader />
@@ -122,7 +122,7 @@ const ConversationPage = () => {
               <div
                 key={message.content}
                 className={cn(
-                  "p-8 w-full flex items-start gap-x-8 rounded-lg",
+                  "p-8 w-full flex items-start gap-x-8 rounded-lg mb-2",
                   message.role === "user" ? "bg-white border border-black/10" : "bg-muted",
                 )}
               >
